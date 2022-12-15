@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione 4</title>
+</head>
+
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2jr5t_PNhxI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <h1>Form</h1>
+    <form action="inviaDati.php" method="post" name="contatti">
+        <h2>Contatta l' azienda</h2>
+        <fieldset>
+            <legend>Dati Anagrafici</legend>
+            <label for="nominativo">nominativo:</label>
+            <input type="text" name="nominativo" id="nominativo">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </fieldset>
+        <fieldset>
+            <legend>Dati di residenza</legend>
+            <label for="indirizzo">Indirizzo:</label>
+            <input type="text" name="indirizzo" id="indirizzo">
+            <label for="cap">Cap:</label>
+            <input type="text" name="cap" id="cap">
+            <label for="località">Località:</label>
+            <input type="text" name="località" id="località">
+            <label for="provincia">Provincia:</label>
+            <input type="text" name="provincia" id="provincia">
+
+        </fieldset>
+        <input type="submit" value="Richiedi Informazioni">
+        <input type="reset" value="Annulla Form">
+        <button type="submit">Richiedi Informazioni 2</button>
+        <button type="reset">Annulla Form 2</button>
+        <button id="calcola-cf" type="button">Calcola Codice Fiscale</button>
+
+    </form>
+
+</body>
+
+</html>
